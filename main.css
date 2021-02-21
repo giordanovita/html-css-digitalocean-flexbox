@@ -1,0 +1,261 @@
+/* regole generali */
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Inter', sans-serif;
+}
+
+.allinea, section, section div {
+  padding: 0px 1%;
+}
+
+header, .jumbo p, section, section>div {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #006aff;
+}
+
+.btn {
+  padding: 5px;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  display: inline-block;
+  border-color: #adadad;
+}
+
+.btn:hover {
+  color: #333;
+  background-color: #e6e6e6;
+}
+
+ header{
+   position: fixed;
+   top: 0;
+   left:0;
+   right: 0;
+   background-color: white;
+   height: 90px;
+ }
+nav div {
+   align-self: center;
+ }
+
+header nav {
+   display: flex;
+   justify-content: space-around;
+ }
+
+ header .img img{
+   width: 70%;
+ }
+
+header li, .ispiration li {
+ display: inline-block;
+ text-decoration: none;
+}
+
+header ul, section>div{
+ display: inline-block;
+ text-align:right;
+ }
+
+header nav div:nth-child(4) {
+   display: none;
+   flex-basis: 6%;
+   flex-shrink: 2;
+ }
+
+header nav div:nth-child(4) span {
+ display: block;
+ width: auto;
+ height: 5px;
+ background-color: black;
+ margin: 3px 0;
+ text-align: right;
+ }
+
+header nav div{
+ flex-basis: 30%;
+ flex-shrink: 1.1;
+}
+
+
+@media screen and (max-width:991px) {
+  header nav div {
+    display: none;
+  }
+  header nav div:nth-child(4), header nav div:first-child {
+    display: block;
+  }
+}
+
+
+.jumbo {
+  display: flex;
+  background: url(img/jumbo.svg);
+  padding: 120px 10px;
+  justify-content:space-around;
+  align-content: center;
+}
+
+.jumbo div {
+  flex-basis: 45%;
+  align-self: center;
+}
+
+.jumbo div:first-child {
+  color: white;
+}
+
+.card {
+  height: 350px;
+  display:flex;
+  background-color: white;
+  border-radius: 5px;
+  padding: 25px 10px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card h3, .card h4 {
+  text-align: center;
+}
+
+.card * {
+  align-self: stretch;
+}
+
+.input-btn {
+  color: #999;
+  opacity: 0.9;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #999;
+}
+
+.blue-bg {
+  background-color: #337ab7;
+  color: white;
+}
+
+.btn-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-flex img {
+  width: 10%;
+}
+
+
+@media screen and (max-width:991px) {
+  .jumbo {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 550px;
+    text-align: center;
+  }
+  .jumbo div {
+    flex-basis: 100%;
+  }
+}
+
+.partners {
+  background-color: #f3f5f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.partners h6 {
+  text-transform: uppercase;
+}
+
+.partners div{
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+@media screen and (max-width:768px) {
+  .partners div img {
+    flex-basis: 35%;
+  }
+}
+
+
+.features {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.section-trident {
+  display: flex;
+}
+
+.section-trident-left {
+  flex-basis: 20%;
+  text-align: left;
+  padding-left: 10%;
+}
+
+.sidelist{
+  list-style-type: none;
+  border-left: 1.5px solid lightgrey;
+}
+
+.sidelist li{
+  padding: 7px 0 7px 10px;
+}
+.section-trident-right {
+  display: flex;
+  flex-basis: 80%;
+  flex-wrap: wrap;
+}
+
+.section-trident-right div{
+  flex-basis: 50%;
+  text-align: left;
+}
+
+
+@media screen and (max-width:991px) {
+  .section-trident {
+    flex-wrap: wrap;
+  }
+
+  .section-trident-right div{
+    flex-basis: 100%;
+  }
+}
+
+.ispiration {
+  text-align: center;
+  background-color: #f3f5f9;
+}
+
+.carousel {
+  display: flex;
+  justify-content: space-between;
+}
+
+.carousel * {
+  align-self:center;
+}
